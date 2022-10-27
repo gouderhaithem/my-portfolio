@@ -1,0 +1,58 @@
+.main {
+  transition: 0.3s ease all;
+}
+.header {
+  padding: 3rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1 {
+  font-size: 2.9rem;
+}
+.header p {
+  padding-top: 0.8rem;
+  font-size: 1.4rem;
+}
+.avatar {
+  margin-top: 3rem;
+  width: 210px;
+}
+.home_bg {
+  margin-top: 5rem;
+  max-width: 51rem;
+}
+@media screen and (max-width: 1000px) {
+  .header h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .home_bg {
+    max-width: 100%;
+  }
+  .header p {
+    padding-top: 0.7rem;
+    font-size: 1.1rem;
+  }
+  .avatar {
+    margin-top: 3rem;
+    width: 160px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .header {
+    padding: 3rem 1.7rem;
+  }
+  .header p {
+    font-size: 1.05rem;
+  }
+}
