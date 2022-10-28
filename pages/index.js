@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
+import Collumns from "../components/Collumns";
 import styles from "../styles/Home.module.css";
+import Cards from "../components/Cards";
 export default function Home() {
   return (
     <div>
@@ -28,6 +30,30 @@ export default function Home() {
             alt="hero-image-logo"
           />
         </header>
+        <section className={styles.main_section}>
+          <h1>Hi, I'm Matt. Nice to meet you.</h1>
+          <p>
+            Since beginning my journey as a freelance designer over 11 years
+            ago, I've done remote work for agencies, consulted for startups, and
+            collaborated with talented people to create digital products for
+            both business and consumer use. I'm quietly confident, naturally
+            curious, and perpetually working on improving my chops one design
+            problem at a time.
+          </p>
+        </section>
+        <Collumns />
+        <div className={styles.projects_text}>
+          <h1>My Recent work </h1>
+          <p>
+            Here are a few past design projects I've worked on. Want to see
+            more?
+            <a href="https://github.com/gouderhicham" target={"_blank"}>
+              {" "}
+              Visit projects.
+            </a>
+          </p>
+        </div>
+        <Cards />
       </main>
     </div>
   );

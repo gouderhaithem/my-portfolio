@@ -3,6 +3,7 @@
   --prime-color: #4831d4;
   --text-color: #141c3a;
   --second-color: #ccf381;
+  --color-gray: rgb(190, 190, 190);
 }
 * {
   padding: 0;
@@ -43,4 +44,13 @@ a {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #20263b;
+}
+.image-container {
+  width: 100%;
+}
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }
