@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
+import Collumns from "../components/Collumns";
 import styles from "../styles/Home.module.css";
+import Cards from "../components/Cards";
 export default function Home() {
   return (
     <div>
@@ -39,6 +41,19 @@ export default function Home() {
             problem at a time.
           </p>
         </section>
+        <Collumns />
+        <div className={styles.projects_text}>
+          <h1>My Recent work </h1>
+          <p>
+            Here are a few past design projects I've worked on. Want to see
+            more?
+            <a href="https://github.com/gouderhicham" target={"_blank"}>
+              {" "}
+              Visit projects.
+            </a>
+          </p>
+        </div>
+        <Cards />
       </main>
     </div>
   );

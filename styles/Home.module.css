@@ -43,7 +43,7 @@
 }
 .main_section {
   text-align: center;
-  padding: 5rem 20%;
+  padding: 5rem 20% 20rem 20%;
   background-color: var(--prime-color);
   color: white;
 }
@@ -56,8 +56,9 @@
 }
 @media screen and (max-width: 800px) {
   .main_section {
-    padding: 5rem 4%;
+    padding: 5rem 4% 10rem 4%;
   }
+
   .header h1 {
     font-size: 2rem;
   }
@@ -72,4 +73,11 @@
     margin-top: 3rem;
     width: 160px;
   }
+}
+.main .projects_text {
+  margin-top: 7rem;
+  text-align: center;
+}
+.main .projects_text p{
+  margin-top: 1rem;
 }
