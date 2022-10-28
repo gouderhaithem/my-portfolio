@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 :root {
   --prime-color: #4831d4;
-  --text-color: #141c3a;
   --second-color: #ccf381;
-  --color-gray: rgb(190, 190, 190);
+  --text-color: #141c3a;
+  --color-gray: rgb(233, 233, 233);
+  --color-blue: #0068d1;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: var(--text-color);
 }
 html,
 body {
   font-family: "Kanit", sans-serif;
   font-size: 105%;
-  color: var(--text-color);
 }
 a {
   color: inherit;
@@ -45,7 +46,7 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #20263b;
 }
-.image-container {
+/* .image-container {
   width: 100%;
 }
 .image {
@@ -53,4 +54,7 @@ a {
   width: 100% !important;
   position: relative !important;
   height: unset !important;
-}
+} */
+/* <div key={i} className={"image-container"}>
+<Image  className ={image} layout = "fill"/> 
+</div>; */

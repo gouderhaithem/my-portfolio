@@ -1,6 +1,56 @@
 .cards_grid {
   display: grid;
-  margin: 0 5rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5rem 5rem 0 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .cards_grid {
+    margin: 5rem 2rem 0 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cards_grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 5rem 1.5rem 0 1.5rem;
+  }
+  .cards_grid .card .title {
+    font-size: 1.07rem;
+  }
+  .cards_grid .card p {
+    font-size: 0.95rem;
+  }
+}
+.cards_grid .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1.8rem;
+  gap: 1.2rem;
+  text-align: center;
+  border: 1px solid var(--color-gray);
+  border-radius: 1rem;
+}
+.cards_grid .card .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+}
+.cards_grid .card .go_to {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-blue);
+  background-color: #ebf5ff;
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+.cards_grid .card .go_to p {
+  color: var(--color-blue);
+  font-size: 0.9rem;
+}
+.cards_grid .card .go_to img {
+  width: 18px;
 }
