@@ -20,7 +20,7 @@
   padding: 0.5rem 1.2rem;
   border-radius: 10rem;
   border: 2px solid var(--prime-color);
-  color: #1d80c4;
+  color: var(--prime-color);
   transition: 0.4s ease all;
 }
 .contact_btn:hover {

@@ -4,11 +4,8 @@ import { useState } from "react";
 import styles from "../styles/Nav.module.css";
 const Nav = () => {
   const [toggled, settoggled] = useState(false);
-
   return (
-    <nav
-      className={`${styles.nav_container}`}
-    >
+    <nav className={`${styles.nav_container}`}>
       <Link className={styles.logo} href={"/"}>
         <Image alt="logo" src={"/logo.svg"} height={65} width={65} />
       </Link>
@@ -27,7 +24,17 @@ const Nav = () => {
           !toggled ? "transform_menu" : "transform_back"
         }`}
       >
-        <p>Projects</p>
+        <p
+          onClick={() => {
+            let projects = document.querySelector(".projects");
+            projects.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          }}
+        >
+          Projects
+        </p>
         <a href="../fe.pdf" download>
           Resumate
         </a>

@@ -10,7 +10,6 @@
 }
 .header h1 {
   font-size: 2.9rem;
-
 }
 .header p {
   padding-top: 0.8rem;
@@ -28,18 +27,6 @@
   .header h1 {
     font-size: 2.6rem;
     line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .header h1 {
-    font-size: 1.8rem;
-  }
-  .header {
-    padding: 3rem 1.7rem;
-  }
-  .header p {
-    font-size: 1.05rem;
   }
 }
 .main_section {
@@ -80,7 +67,7 @@
   margin-top: 7rem;
   text-align: center;
 }
-.main .projects_text p{
+.main .projects_text p {
   margin: 1rem;
 }
 @media screen and (max-width: 450px) {
@@ -88,15 +75,16 @@
     font-size: 1.8rem;
   }
   .header {
-    padding: 3rem 1.7rem;
+    padding: 3rem 1.7rem 0 1.7rem;
   }
+
   .header p {
     font-size: 1.05rem;
   }
-  .main .projects_text p{
+  .main .projects_text p {
     font-size: 0.94rem;
   }
-  .main .projects_text h1{
+  .main .projects_text h1 {
     font-size: 1.7rem;
   }
 }

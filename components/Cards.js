@@ -33,7 +33,7 @@ const Cards = () => {
     },
   ];
   return (
-    <section className={styles.cards_grid}>
+    <section className={`${styles.cards_grid} projects`}>
       {websites.map((website, i) => {
         return (
           <div className={styles.card} key={i}>

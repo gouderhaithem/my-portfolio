@@ -88,4 +88,7 @@
     padding: 3.5rem 6%;
     row-gap: 2rem;
   }
+  .footer_real .footer_p {    
+    margin: 0 10%;
+  }
 }
