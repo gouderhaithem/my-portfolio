@@ -30,6 +30,7 @@
   text-align: center;
   border: 1px solid var(--color-gray);
   border-radius: 1rem;
+  box-shadow: 1px 3px 4px rgb(238, 238, 238);
 }
 .cards_grid .card .title {
   display: flex;

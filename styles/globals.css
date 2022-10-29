@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&display=swap");
 :root {
   --prime-color: #4831d4;
   --second-color: #ccf381;
@@ -14,8 +14,9 @@
 }
 html,
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 105%;
+  overflow-x: hidden;
 }
 a {
   color: inherit;

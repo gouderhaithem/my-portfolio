@@ -22,7 +22,7 @@ export default function Home() {
 
           <img
             className={styles.avatar}
-            src={"/mf-avatar.svg"}
+            src={"/my-avatar.svg"}
             alt="hero-image-logo"
           />
           <img

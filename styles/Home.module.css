@@ -10,6 +10,7 @@
 }
 .header h1 {
   font-size: 2.9rem;
+
 }
 .header p {
   padding-top: 0.8rem;
@@ -17,7 +18,7 @@
 }
 .avatar {
   margin-top: 3rem;
-  width: 210px;
+  width: 230px;
 }
 .home_bg {
   margin-top: 5rem;
