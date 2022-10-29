@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Collumns from "../components/Collumns";
 import styles from "../styles/Home.module.css";
 import Cards from "../components/Cards";
+import Footer from "../components/Footer"
 export default function Home() {
   return (
     <div>
@@ -21,7 +22,7 @@ export default function Home() {
 
           <img
             className={styles.avatar}
-            src={"/mf-avatar.svg"}
+            src={"/my-avatar.svg"}
             alt="hero-image-logo"
           />
           <img
@@ -47,13 +48,14 @@ export default function Home() {
           <p>
             Here are a few past design projects I've worked on. Want to see
             more?
-            <a href="https://github.com/gouderhicham" target={"_blank"}>
+            <a style={{color : "#0068d1" , fontWeight : "bold"}} href="https://github.com/gouderhicham" target={"_blank"}>
               {" "}
-              Visit projects.
+              View more projects.
             </a>
           </p>
         </div>
         <Cards />
+        <Footer /> 
       </main>
     </div>
   );
