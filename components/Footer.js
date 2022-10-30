@@ -7,8 +7,8 @@ const Footer = () => {
       <section className={styles.contact}>
         <h1 className={styles.contact_h1}>Contact me</h1>
         <p className={styles.contact_p}>
-          Interested in working together? We should queue up a time to chat.
-          I'll buy the coffee.
+          Interested in talking together? We should queue up a time to chat.
+          I'll not buy the coffee.
         </p>
         <Link href={"contact"} className={styles.contact_button}>
           <Image

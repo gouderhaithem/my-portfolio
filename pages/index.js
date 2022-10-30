@@ -4,7 +4,42 @@ import Collumns from "../components/Collumns";
 import styles from "../styles/Home.module.css";
 import Cards from "../components/Cards";
 import Footer from "../components/Footer";
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  const [stop, setstop] = useState(false);
+  const [text, setText] = useState("");
+  const [fullText, setFullText] = useState(
+    "I design and code beautifully simple things, and I hate what I do."
+  );
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    if (text !== fullText && stop === false) {
+      setTimeout(() => {
+        setText(text + fullText[index]);
+        setIndex(index + 1);
+      }, 50);
+    } else {
+      setFullText(
+        "I design and code beautifully simple things, and I love what I do."
+      );
+      setText("I design and code beautifully simple things,");
+      setIndex(44);
+      if (text !== fullText && stop === false) {
+        setTimeout(() => {
+          setText(text + fullText[index]);
+          setIndex(index + 1);
+        }, 75);
+      }
+      if (
+        text ===
+        "I design and code beautifully simple things, and I love what I do."
+      ) {
+        setstop(true);
+        setText(fullText);
+      }
+    }
+  }, [index]);
   return (
     <div>
       <Head>
@@ -14,22 +49,17 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <header className={styles.header}>
-          <h1>Designer, Frontend Developer & Mentor</h1>
-          <p>
-            I design and code beautifully simple things, and I love what I do.
-          </p>
-
+          <h1>Cs Student & Future Frontend Developer</h1>
+          <p>{text}</p>
           <Image
             width={330}
             height={300}
             className={styles.avatar}
             src={"/my-avatar.svg"}
             layout="fill"
-            loading="lazy"
-            alt = "avatart"
+            alt="avatart"
           />
           <Image
-            loading="lazy"
             width={630}
             height={400}
             className={styles.home_bg}
@@ -39,21 +69,20 @@ export default function Home() {
           />
         </header>
         <section className={styles.main_section}>
-          <h1>Hi, I'm Matt. Nice to meet you.</h1>
+          <h1>Hi, I'm Gouder. Nice to meet you.</h1>
           <p>
-            Since beginning my journey as a freelance designer over 11 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
+            Since senior high school i started learning web development
+            specifically front end web development, during this learning journey
+            i manged to learn a lot of web development concepts and many usefull
+            libraries and be familiar with it's workflow, and im still learning
+            new techs with no intention to stop .
           </p>
         </section>
         <Collumns />
         <div className={styles.projects_text}>
           <h1>My Recent work </h1>
           <p>
-            Here are a few past design projects I've worked on. Want to see
+            Here are a few past projects I've worked on. Want to see
             more?
             <a
               style={{ color: "#0068d1", fontWeight: "bold" }}

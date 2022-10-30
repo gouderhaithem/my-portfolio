@@ -11,17 +11,17 @@ const Collumns = () => {
             width={30}
             loading="lazy"
             src={"/stacks.svg"}
-            alt = "stacks"
+            alt="stacks"
           />
         </div>
 
-        <h3>Frontend Developer</h3>
+        <h3>Technologies</h3>
         <p className={styles.descreption}>
-          I genuinely care about people, and love helping fellow designers work
-          on their craft.
+          New technologies are introduced every day so i always choose the best
+          choices .
         </p>
-        <span className={styles.title}>Languages I speak:</span>
-        <p>UX/UI, Product design, Freelancing</p>
+        <span className={styles.title}>Technologies i use:</span>
+        <p>Git, Github, 3rd parties Apis, MongoDb, Firebase, Socket io</p>
       </div>
       <div className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
@@ -31,16 +31,16 @@ const Collumns = () => {
             width={30}
             loading="lazy"
             src={"/icon-dev.svg"}
-            alt = "front end dev image"
+            alt="front end dev image"
           />
         </div>
-        <h3>Mentor</h3>
+        <h3>Frontend Skills</h3>
         <p className={styles.descreption}>
           I like to code things from scratch, and enjoy bringing ideas to life
           in the browser.
         </p>
-        <span className={styles.title}>Experiences I draw from:</span>
-        <p>HTML, Pug, Slim, CSS, Sass, Git</p>
+        <span className={styles.title}>Languages and framworks:</span>
+        <p>HTML, CSS, SCSS, Vanilla JS, Next JS, Node JS</p>
       </div>
     </section>
   );
