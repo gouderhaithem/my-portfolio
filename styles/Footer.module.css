@@ -15,16 +15,19 @@
   color: var(--prime-color);
 }
 .footer_real .footer_image {
-  width: 75px;
+  width: 75px !important;
+  height: unset !important;
+  position: relative !important;
 }
 .footer_real .footer_p {
   font-size: 1.8rem;
   font-weight: bold;
   margin: 0 30%;
 }
-.footer_real .icons img {
-  width: 25px;
-  height: 25px;
+.footer_real .icons .img {
+  width: 25px !important;
+  height: 25px !important;
+  position: relative !important;
 }
 .footer_real .icons a {
   border: 2px solid var(--prime-color);
@@ -33,6 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease all;
+}
+.footer_real .icons a:hover {
+  background-color: var(--prime-color);
+  /* NOTE:change thr color of image  */
 }
 .footer_real .icons {
   display: flex;
@@ -74,6 +82,11 @@
   width: fit-content;
   white-space: nowrap;
   font-size: 1.2rem;
+  transition: 0.3s ease all;
+}
+.contact .contact_button:hover {
+  background-color: rgb(8, 255, 152);
+  color: #141c3a;
 }
 @media screen and (max-width: 1141px) {
   .contact {

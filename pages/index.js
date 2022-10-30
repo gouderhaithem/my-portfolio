@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Image from "next/image";
 import Collumns from "../components/Collumns";
 import styles from "../styles/Home.module.css";
 import Cards from "../components/Cards";
@@ -19,15 +19,23 @@ export default function Home() {
             I design and code beautifully simple things, and I love what I do.
           </p>
 
-          <img
+          <Image
+            width={330}
+            height={300}
             className={styles.avatar}
             src={"/my-avatar.svg"}
-            alt="hero-image-logo"
+            layout="fill"
+            loading="lazy"
+            alt = "avatart"
           />
-          <img
+          <Image
+            loading="lazy"
+            width={630}
+            height={400}
             className={styles.home_bg}
             src={"/home-bg.svg"}
             alt="hero-image-logo"
+            layout="fill"
           />
         </header>
         <section className={styles.main_section}>
@@ -51,6 +59,7 @@ export default function Home() {
               style={{ color: "#0068d1", fontWeight: "bold" }}
               href="https://github.com/gouderhicham"
               target={"_blank"}
+              rel="noreferrer"
             >
               {" "}
               View more projects.

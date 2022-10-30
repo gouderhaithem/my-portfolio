@@ -1,4 +1,5 @@
 import styles from "../styles/Cards.module.css";
+import Image from "next/image";
 const Cards = () => {
   const websites = [
     {
@@ -29,7 +30,7 @@ const Cards = () => {
       title: "Send Me Sms",
       des: "By filling the input field and submitting the form a new sms with be sent to me!",
       link: "https://gouderhicham-sms.vercel.app/",
-      icon: "sms.png",
+      icon: "/sms.png",
     },
   ];
   return (
@@ -38,12 +39,30 @@ const Cards = () => {
         return (
           <div className={styles.card} key={i}>
             <div className={styles.title}>
-              <img src={website.icon} alt="website icon" />
+              <Image
+                src={website.icon}
+                width={34}
+                height={34}
+                alt="website icon"
+                loading="lazy"
+              />
               <h2>{website.title}</h2>
             </div>
             <p>{website.des}</p>
-            <a href={website.link} target="_blank" className={styles.go_to}>
-              <img src="/link.png" alt="link image" />
+            <a
+              rel="noreferrer"
+              href={website.link}
+              target="_blank"
+              className={styles.go_to}
+            >
+              <Image
+                className={styles.img}
+                src="/link.png"
+                width={20}
+                height={20}
+                alt="link image"
+                loading="lazy"
+              />
               <p>visit website</p>
             </a>
           </div>

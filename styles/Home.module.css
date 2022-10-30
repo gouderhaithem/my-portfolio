@@ -2,7 +2,7 @@
   transition: 0.3s ease all;
 }
 .header {
-  padding: 3rem 3rem 0 3rem;
+  padding: 5rem 3rem 0 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,15 @@
 }
 .avatar {
   margin-top: 3rem;
-  width: 230px;
+  width: 260px !important;
+  position: relative !important;
+  height: unset !important;
 }
 .home_bg {
-  margin-top: 5rem;
-  max-width: 51rem;
+  margin-top: 5rem !important;
+  width: 51rem !important;
+  position: relative !important;
+  height: unset !important;
 }
 @media screen and (max-width: 1000px) {
   .header h1 {
@@ -52,7 +56,7 @@
     font-size: 2rem;
   }
   .home_bg {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .header p {
     padding-top: 0.7rem;
@@ -60,7 +64,7 @@
   }
   .avatar {
     margin-top: 3rem;
-    width: 160px;
+    width: 180px !important;
   }
 }
 .main .projects_text {
@@ -75,7 +79,7 @@
     font-size: 1.8rem;
   }
   .header {
-    padding: 3rem 1.7rem 0 1.7rem;
+    padding: 3rem 1.5rem 0 1.5rem;
   }
 
   .header p {

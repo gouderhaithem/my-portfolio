@@ -52,6 +52,8 @@
   color: var(--color-blue);
   font-size: 0.9rem;
 }
-.cards_grid .card .go_to img {
-  width: 18px;
+.cards_grid .card .go_to .img {
+  width: 18px !important;
+  height: unset !important;
+  position: relative !important;
 }

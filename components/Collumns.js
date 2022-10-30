@@ -1,10 +1,18 @@
 import styles from "../styles/Collumns.module.css";
+import Image from "next/image";
 const Collumns = () => {
   return (
     <section className={styles.grid_main}>
       <div className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
-          <img src={"/stacks.svg"} />
+          <Image
+            className={styles.img}
+            height={30}
+            width={30}
+            loading="lazy"
+            src={"/stacks.svg"}
+            alt = "stacks"
+          />
         </div>
 
         <h3>Frontend Developer</h3>
@@ -17,7 +25,14 @@ const Collumns = () => {
       </div>
       <div className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
-          <img src={"/icon-dev.svg"} />
+          <Image
+            className={styles.img}
+            height={30}
+            width={30}
+            loading="lazy"
+            src={"/icon-dev.svg"}
+            alt = "front end dev image"
+          />
         </div>
         <h3>Mentor</h3>
         <p className={styles.descreption}>

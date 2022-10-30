@@ -48,18 +48,12 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #20263b;
 }
-/* .image-container {
-  width: 100%;
-}
-.image {
+/* .image {
   object-fit: contain;
   width: 100% !important;
   position: relative !important;
   height: unset !important;
 } */
-/* <div key={i} className={"image-container"}>
-<Image  className ={image} layout = "fill"/> 
-</div>; */
 .fill {
   color: rgb(153, 153, 153) !important;
   border: 1px solid rgb(153, 153, 153) !important;

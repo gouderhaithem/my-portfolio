@@ -1,8 +1,9 @@
 import styles from "../styles/Contact_Page.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
-
-const contact = () => {
+import Image from "next/image";
+import Head from "next/head";
+const Contact = () => {
   const [text, setText] = useState({
     name: "",
     email: "",
@@ -46,8 +47,8 @@ const contact = () => {
         })
         .catch((err) => console.log(err)),
       {
-        loading: "Sending message ...",
-        success: "Message Sent !",
+        loading: "Sending Form ...",
+        success: "Form submitted !",
         error: "Error when fetching data :(",
       }
     );
@@ -61,9 +62,19 @@ const contact = () => {
   }, [text.email, text.message, text.name]);
   return (
     <>
+      <Head>
+        <title>Contact | Gouder hicham</title>
+      </Head>
       <Toaster />
       <div className={styles.image}>
-        <img src="/my-avatar.svg" />
+        <Image
+          className={styles.img}
+          height={200}
+          width={200}
+          loading="lazy"
+          src="/my-avatar.svg"
+          alt = "logo avatar"
+        />
       </div>
       <main className={styles.container}>
         <h1>Thanks for taking the time to reach out.</h1>
@@ -116,5 +127,7 @@ const contact = () => {
     </>
   );
 };
-
-export default contact;
+export default Contact;
+//NOTE: Hover effects
+//NOTE: change content
+//NOTE: animations

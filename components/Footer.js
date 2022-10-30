@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Footer.module.css";
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -10,30 +11,70 @@ const Footer = () => {
           I'll buy the coffee.
         </p>
         <Link href={"contact"} className={styles.contact_button}>
-          <img src="/contact.png" />
+          <Image
+            src="/contact.png"
+            height={25}
+            width={25}
+            alt="contact svg"
+            loading="lazy"
+          />
           Contact me
         </Link>
       </section>
       <div className={styles.footer_real}>
-        <img className={styles.footer_image} src="/footer_logo.svg" />
+        <Image
+          height={25}
+          width={75}
+          loading="lazy"
+          className={styles.footer_image}
+          src="/footer_logo.svg"
+          alt="footer logo"
+        />
         <p className={styles.footer_p}>
           I keep learning , listening & growing and experementing.
         </p>
         <div className={styles.icons}>
-          <a target={"_blank"} href="https://github.com/gouderhicham/">
-            <img src="/github-purple.png" />
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href="https://github.com/gouderhicham/"
+          >
+            <Image
+              height={25}
+              width={25}
+              loading="lazy"
+              className={styles.img}
+              src="/github-purple.png"
+              alt="github image"
+            />
           </a>
           <a
             target={"_blank"}
+            rel="noreferrer"
             href="https://www.linkedin.com/in/gouder-hicham619/"
           >
-            <img src="/linked.png" />
+            <Image
+              height={25}
+              width={25}
+              loading="lazy"
+              className={styles.img}
+              src="/linked.png"
+              alt="linkedin image"
+            />
           </a>
           <a
+            rel="noreferrer"
             target={"_blank"}
             href="https://stackoverflow.com/users/14529403/gouder-hicham"
           >
-            <img src="/stack-overflow.png" />
+            <Image
+              height={25}
+              width={25}
+              loading="lazy"
+              className={styles.img}
+              src="/stack-overflow.png"
+              alt="stacke over flow image"
+            />
           </a>
         </div>
       </div>
