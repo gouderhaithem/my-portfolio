@@ -3,6 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import AOS from "aos";
 const Contact = () => {
   const [text, setText] = useState({
     name: "",
@@ -60,6 +61,10 @@ const Contact = () => {
       setdisabled(true);
     }
   }, [text.email, text.message, text.name]);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Head>
@@ -71,16 +76,15 @@ const Contact = () => {
           className={styles.img}
           height={200}
           width={200}
-          loading="lazy"
           src="/my-avatar.svg"
-          alt = "logo avatar"
+          alt="logo avatar"
         />
       </div>
       <main className={styles.container}>
-        <h1>Thanks for taking the time to reach out.</h1>
+        <h1 data-aos="fade-up">Thanks for taking the time to reach out.</h1>
         <form onSubmit={sendSms} className={styles.form}>
           <div className={styles.name_email}>
-            <div>
+            <div data-aos="fade-up">
               <p>Name</p>
               <input
                 onChange={(e) => {
@@ -91,7 +95,7 @@ const Contact = () => {
                 type="text"
               />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <p>Email</p>
               <input
                 value={text.email}
@@ -103,7 +107,11 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className={styles.text_area}>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className={styles.text_area}
+          >
             <p>Message</p>
             <textarea
               value={text.message}

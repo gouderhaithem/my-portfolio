@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Nav from "../components/Nav";
+import "aos/dist/aos.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>

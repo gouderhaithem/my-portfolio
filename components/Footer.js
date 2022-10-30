@@ -23,6 +23,7 @@ const Footer = () => {
       </section>
       <div className={styles.footer_real}>
         <Image
+          data-aos="fade-up"
           height={25}
           width={75}
           loading="lazy"
@@ -30,10 +31,10 @@ const Footer = () => {
           src="/footer_logo.svg"
           alt="footer logo"
         />
-        <p className={styles.footer_p}>
+        <p data-aos="fade-up" className={styles.footer_p}>
           I keep learning , listening & growing and experementing.
         </p>
-        <div className={styles.icons}>
+        <div data-aos="fade-right" className={styles.icons}>
           <a
             target={"_blank"}
             rel="noreferrer"

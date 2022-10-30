@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
-
+import AOS from "aos";
 export default function Home() {
   const [stop, setstop] = useState(false);
   const [text, setText] = useState("");
@@ -40,6 +40,10 @@ export default function Home() {
       }
     }
   }, [index]);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <Head>
@@ -48,19 +52,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <header className={styles.header}>
-          <h1>Cs Student & Future Frontend Developer</h1>
-          <p>{text}</p>
+        <header data-aos="fade-up" className={styles.header}>
+          <h1 data-aos="fade-up">Cs Student & Future Frontend Developer</h1>
+          <p data-aos="fade-up">{text}</p>
           <Image
+            data-aos="fade-up"
             width={330}
             height={300}
             className={styles.avatar}
             src={"/my-avatar.svg"}
             layout="fill"
             alt="avatart"
+            loading="eager"
           />
           <Image
             width={630}
+            loading="eager"
             height={400}
             className={styles.home_bg}
             src={"/home-bg.svg"}
@@ -69,8 +76,8 @@ export default function Home() {
           />
         </header>
         <section className={styles.main_section}>
-          <h1>Hi, I'm Gouder. Nice to meet you.</h1>
-          <p>
+          <h1 data-aos="fade-up">Hi, I'm Gouder. Nice to meet you.</h1>
+          <p data-aos="fade-up">
             Since senior high school i started learning web development
             specifically front end web development, during this learning journey
             i manged to learn a lot of web development concepts and many usefull
@@ -82,8 +89,7 @@ export default function Home() {
         <div className={styles.projects_text}>
           <h1>My Recent work </h1>
           <p>
-            Here are a few past projects I've worked on. Want to see
-            more?
+            Here are a few past projects I've worked on. Want to see more?
             <a
               style={{ color: "#0068d1", fontWeight: "bold" }}
               href="https://github.com/gouderhicham"

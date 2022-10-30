@@ -3,7 +3,7 @@ import Image from "next/image";
 const Collumns = () => {
   return (
     <section className={styles.grid_main}>
-      <div className={styles.grid_col}>
+      <div data-aos="fade-right" className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
           <Image
             className={styles.img}
@@ -23,7 +23,7 @@ const Collumns = () => {
         <span className={styles.title}>Technologies i use:</span>
         <p>Git, Github, 3rd parties Apis, MongoDb, Firebase, Socket io</p>
       </div>
-      <div className={styles.grid_col}>
+      <div data-aos="fade-left" className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
           <Image
             className={styles.img}

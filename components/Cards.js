@@ -37,7 +37,12 @@ const Cards = () => {
     <section className={`${styles.cards_grid} projects`}>
       {websites.map((website, i) => {
         return (
-          <div className={styles.card} key={i}>
+          <div
+            data-aos="fade-left"
+            data-aos-delay={`${i * 100}`}
+            className={styles.card}
+            key={i}
+          >
             <div className={styles.title}>
               <Image
                 src={website.icon}

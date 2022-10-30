@@ -47,7 +47,7 @@ const Nav = () => {
         >
           Projects
         </p>
-        <a href="../fe.pdf" download>
+        <a href ="/resume.pdf" download>
           Resume
         </a>
         <Link className={styles.contact_btn} href={"/contact"}>
