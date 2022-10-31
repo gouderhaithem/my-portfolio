@@ -69,9 +69,10 @@ const Contact = () => {
     <>
       <Head>
         <title>Contact | Gouder hicham</title>
-        <meta name="description">
-          Gouder hicham's contact page created by gouder hicham
-        </meta>
+        <meta
+          name="description"
+          content="Gouder hicham's contact page created by gouder hicham"
+        ></meta>
       </Head>
       <Toaster />
       <div className={styles.image}>
