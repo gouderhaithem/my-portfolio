@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta
           name="google-site-verification"
-          content="xnBqd2s9vl_rUtHUk6UXbusGQFgww8wNiWVH0FwornQ"
+          content="wKq_AE2WgOioSjPgF6wHt6HNULSiyFpOgMrQ0hmL08k"
         />
       </Head>
       <Nav />
