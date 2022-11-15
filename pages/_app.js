@@ -6,10 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta
-          name="google-site-verification"
-          content="wKq_AE2WgOioSjPgF6wHt6HNULSiyFpOgMrQ0hmL08k"
-        />
+        <meta name="google-site-verification" content="G2mRpRUkjIk1es6e-mjpPoSpNTZqVRouAmgISfBGU5k" />
       </Head>
       <Nav />
       <Component {...pageProps} />
