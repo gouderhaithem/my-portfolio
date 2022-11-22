@@ -38,12 +38,8 @@ const Contact = () => {
             setTimeout(() => {
               resolve(res.message);
               setdisabled(false);
-              setText({
-                name: "",
-                email: "",
-                message: "",
-              });
-            }, 4000);
+              setText(old => ({...old , message : ""}));
+            }, 2000);
           });
         })
         .catch((err) => console.log(err)),
