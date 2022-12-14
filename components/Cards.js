@@ -5,7 +5,7 @@ const Cards = () => {
     {
       title: "Chat Room",
       des: "Chat rooms website built with next js and socket io with firebase/mongoDb database.",
-      link: "https://gouderhicham-chat.herokuapp.com/?room=3",
+      link: "https://gouder-chat.vercel.app/?room=sandwich+%F0%9F%8C%AD",
       icon: "/chat-room.png",
     },
     {
