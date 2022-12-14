@@ -3,7 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
-import AOS from "aos";
+import AOS from 'aos';
 const Contact = () => {
   const [text, setText] = useState({
     name: "",
