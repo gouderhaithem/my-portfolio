@@ -21,7 +21,7 @@ const Collumns = () => {
           choices .
         </p>
         <span className={styles.title}>Technologies i use:</span>
-        <p>Git, Github, 3rd parties Apis, MongoDb, Firebase, Socket io</p>
+        <p>Git, Github, 3rd parties Apis, Firebase, Socket io</p>
       </div>
       <div data-aos="fade-left" className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
