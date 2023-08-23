@@ -1,0 +1,94 @@
+.main {
+  transition: 0.3s ease all;
+}
+.header {
+  padding: 5rem 3rem 0 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1 {
+  font-size: 2.9rem;
+}
+.header p {
+  padding-top: 0.8rem;
+  font-size: 1.4rem;
+}
+.avatar {
+  margin-top: 3rem;
+  width: 260px !important;
+  position: relative !important;
+  height: unset !important;
+}
+.home_bg {
+  margin-top: 5rem !important;
+  width: 51rem !important;
+  position: relative !important;
+  height: unset !important;
+}
+@media screen and (max-width: 1000px) {
+  .header h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+}
+.main_section {
+  text-align: center;
+  padding: 5rem 20% 20rem 20%;
+  background-color: var(--prime-color);
+}
+.main_section h1 {
+  font-size: 1.9rem;
+  padding-bottom: 1.5rem;
+  color: white !important;
+}
+.main_section p {
+  font-size: 1.15rem;
+  color: white !important;
+}
+@media screen and (max-width: 800px) {
+  .main_section {
+    padding: 5rem 4% 10rem 4%;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+  .home_bg {
+    max-width: 100% !important;
+  }
+  .header p {
+    padding-top: 0.7rem;
+    font-size: 1.1rem;
+  }
+  .avatar {
+    margin-top: 3rem;
+    width: 180px !important;
+  }
+}
+.main .projects_text {
+  margin-top: 7rem;
+  text-align: center;
+}
+.main .projects_text p {
+  margin: 1rem;
+}
+@media screen and (max-width: 450px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .header {
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+
+  .header p {
+    font-size: 1.05rem;
+  }
+  .main .projects_text p {
+    font-size: 0.94rem;
+  }
+  .main .projects_text h1 {
+    font-size: 1.7rem;
+  }
+}
