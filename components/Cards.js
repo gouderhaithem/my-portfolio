@@ -5,14 +5,14 @@ const Cards = () => {
     {
       title: "my blogger",
       des: "Blogger website using react js , express js and mysql for  express opinions and present the latest news",
-      link: "https://gouderhicham-sms.vercel.app/",
+      link: "https://gouderhaithem-blog.vercel.app/",
       icon: "/bloger.png",
     },
 
     {
       title: "DZ Footy website",
       des: "A react js website where you can see the result,matches times and  players status any league or cup .",
-      link: "https://haithemgouder.github.io/dzfooty/",
+      link: "https://gouderhaithem.github.io/dzfooty/",
       icon: "/dzfooty.png",
     },
     {
@@ -24,13 +24,13 @@ const Cards = () => {
     {
       title: "Arts Animation Website",
       des: "A react app that shows Simple responsive art website or portfolio with amazing animation ",
-      link: "https://haithemgouder.github.io/artswebsite/",
+      link: "https://gouderhaithem.github.io/artswebsite/",
       icon: "/logo.png",
     },
     {
       title: "React Music Player",
       des: "responsive app with dark mode option for listen certain music     ",
-      link: "https://haithemgouder.github.io/react-music-player/",
+      link: "https://gouderhaithem.github.io/react-music-player/",
       icon: "/apple-music-icon.png",
     },
 
