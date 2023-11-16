@@ -7,8 +7,8 @@ const Footer = () => {
       <section className={styles.contact}>
         <h1 className={styles.contact_h1}>Contact me</h1>
         <p className={styles.contact_p}>
-          Interested in talking together? We should queue up a time to chat.
-          I'll not buy the coffee.
+          Excited to have a conversation ? Let's find a time that works. And
+          don't worry, I'll cover the coffee!
         </p>
         <Link href={"contact"} className={styles.contact_button}>
           <Image
@@ -24,11 +24,11 @@ const Footer = () => {
       <div className={styles.footer_real}>
         <Image
           data-aos="fade-up"
-          height={25}
-          width={75}
+          height={100}
+          width={100}
           loading="lazy"
           className={styles.footer_image}
-          src="/footer_logo.svg"
+          src="/logo31.svg"
           alt="footer logo"
         />
         <p data-aos="fade-up" className={styles.footer_p}>
@@ -38,7 +38,7 @@ const Footer = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://github.com/gouderhicham/"
+            href="https://github.com/haithemgouder"
           >
             <Image
               height={25}
@@ -52,7 +52,7 @@ const Footer = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://www.linkedin.com/in/gouder-hicham619/"
+            href="https://www.linkedin.com/in/haithem-gouder%EF%BF%BD-689164244/"
           >
             <Image
               height={25}
@@ -66,7 +66,7 @@ const Footer = () => {
           <a
             rel="noreferrer"
             target={"_blank"}
-            href="https://stackoverflow.com/users/14529403/gouder-hicham"
+            href="https://stackoverflow.com/users/22660071/gouder-haithem"
           >
             <Image
               height={25}

@@ -3,34 +3,42 @@ import Image from "next/image";
 const Cards = () => {
   const websites = [
     {
-      title: "Chat Room",
-      des: "Chat rooms website built with next js and socket io with firebase/mongoDb database.",
-      link: "https://gouder-chat.vercel.app/?room=sandwich+%F0%9F%8C%AD",
-      icon: "/chat-room.png",
-    },
-    {
-      title: "Mini Fb",
-      des: "A next js website where you can post , like , edit stuff and other people can see it.",
-      link: "https://gouderhicham-fb.vercel.app/",
-      icon: "/social-media.png",
-    },
-    {
-      title: "Crypto Info / News",
-      des: "A react app that shows latest states and news for each individual crypto currency ",
-      link: "https://gouderhicham-crypto.netlify.app/",
-      icon: "/crypto.png",
-    },
-    {
-      title: "React Travel App",
-      des: "If you want to see hotels and restaurants based on a certain area, this app is for you",
-      link: "https://gouderhicham-gps.netlify.app/#close",
-      icon: "/gps.png",
-    },
-    {
-      title: "Send Me Sms",
-      des: "By filling the input field and submitting the form a new sms with be sent to me!",
+      title: "my blogger",
+      des: "Blogger website using react js , express js and mysql for  express opinions and present the latest news",
       link: "https://gouderhicham-sms.vercel.app/",
-      icon: "/sms.png",
+      icon: "/bloger.png",
+    },
+
+    {
+      title: "DZ Footy website",
+      des: "A react js website where you can see the result,matches times and  players status any league or cup .",
+      link: "https://haithemgouder.github.io/dzfooty/",
+      icon: "/dzfooty.png",
+    },
+    {
+      title: "dropshipping using Shopify",
+      des: " dropshipping website designed and created  by me ",
+      link: "https://www.shopconsciouslycool.com",
+      icon: "/shopify.png",
+    },
+    {
+      title: "Arts Animation Website",
+      des: "A react app that shows Simple responsive art website or portfolio with amazing animation ",
+      link: "https://haithemgouder.github.io/artswebsite/",
+      icon: "/logo.png",
+    },
+    {
+      title: "React Music Player",
+      des: "responsive app with dark mode option for listen certain music     ",
+      link: "https://haithemgouder.github.io/react-music-player/",
+      icon: "/apple-music-icon.png",
+    },
+
+    {
+      title: "Quran website",
+      des: "Islamic website for listen or read to quran,adhkar,sunna,salat times and you can ask question about islam relegion  created using next js , firebase ",
+      link: "https://gouderhicham-sms.vercel.app/",
+      icon: "/quran.png",
     },
   ];
   return (

@@ -17,7 +17,7 @@ export default function handler(req, res) {
       disable_web_page_preview: false,
       disable_notification: false,
       reply_to_message_id: 0,
-      chat_id: "5204325500",
+      chat_id: "1900497944",
     }),
   };
   fetch(tocken, options)

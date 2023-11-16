@@ -12,7 +12,7 @@ const Nav = () => {
         <Image
           loading="lazy"
           alt="logo"
-          src={"/logo.svg"}
+          src={"/logo31.svg"}
           height={65}
           width={65}
         />
@@ -47,7 +47,7 @@ const Nav = () => {
         >
           Projects
         </p>
-        <a href ="/resume.pdf" download>
+        <a href="/resume.pdf" download>
           Resume
         </a>
         <Link className={styles.contact_btn} href={"/contact"}>

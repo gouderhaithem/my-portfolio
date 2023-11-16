@@ -3,7 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
-import AOS from 'aos';
+import AOS from "aos";
 const Contact = () => {
   const [text, setText] = useState({
     name: "",
@@ -38,7 +38,7 @@ const Contact = () => {
             setTimeout(() => {
               resolve(res.message);
               setdisabled(false);
-              setText(old => ({...old , message : ""}));
+              setText((old) => ({ ...old, message: "" }));
             }, 1200);
           });
         })
@@ -64,10 +64,10 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Gouder Hicham | Contact</title>
+        <title>Gouder Haithem | Contact</title>
         <meta
           name="description"
-          content="Gouder hicham's contact page created by gouder hicham"
+          content="Gouder Haithem's contact page created by Gouder Haithem"
         ></meta>
       </Head>
       <Toaster />

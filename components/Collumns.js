@@ -21,7 +21,9 @@ const Collumns = () => {
           choices .
         </p>
         <span className={styles.title}>Technologies i use:</span>
-        <p>Git, Apis, Firebase, Socket io, mySql, MongoDB</p>
+        <p>
+          Git, Apis, Firebase, Socket io, mySql, MongoDB , WordPress, shopify
+        </p>
       </div>
       <div data-aos="fade-left" className={styles.grid_col}>
         <div className={`${styles.grid_img} align-center`}>
@@ -40,7 +42,10 @@ const Collumns = () => {
           in the browser.
         </p>
         <span className={styles.title}>Languages and framworks:</span>
-        <p>Next JS, Node JS, Scss, PureCss, c++ </p>
+        <p>
+          Next JS, Node JS, Scss, PureCss, dart, express js , react js , react
+          native, Electron js{" "}
+        </p>
       </div>
     </section>
   );
