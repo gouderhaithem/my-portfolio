@@ -8,6 +8,12 @@ const Cards = () => {
       link: "https://gouderhaithem-blog.vercel.app/",
       icon: "/bloger.png",
     },
+    {
+      title: "my bloghub",
+      des: "Blogger website using next js , FireBase for opinions and present the latest news",
+      link: "https://mybloghub.vercel.app/",
+      icon: "/logo30.png",
+    },
 
     {
       title: "DZ Footy website",
@@ -25,7 +31,7 @@ const Cards = () => {
       title: "Arts Animation Website",
       des: "A react app that shows Simple responsive art website or portfolio with amazing animation ",
       link: "https://gouderhaithem.github.io/artswebsite/",
-      icon: "/logo.png",
+      icon: "/social-media.png",
     },
     {
       title: "React Music Player",
@@ -33,12 +39,18 @@ const Cards = () => {
       link: "https://gouderhaithem.github.io/react-music-player/",
       icon: "/apple-music-icon.png",
     },
+    {
+      title: "Chat room",
+      des: "Chat rooms website built with next js and socket io with firebase/mongoDb database.",
+      link: "https://gouder-chat.vercel.app/?room=sandwich+%F0%9F%8C%AD",
+      icon: "/chat-room.png",
+    },
 
     {
-      title: "Quran website",
-      des: "Islamic website for listen or read to quran,adhkar,sunna,salat times and you can ask question about islam relegion  created using next js , firebase ",
-      link: "https://gouderhicham-sms.vercel.app/",
-      icon: "/quran.png",
+      title: "Mini Fb Website",
+      des: "Mini fb like fb using next js , firebase ",
+      link: "https://gouderhicham-fb.vercel.app/",
+      icon: "/social-media.png",
     },
   ];
   return (

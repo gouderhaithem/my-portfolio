@@ -38,7 +38,7 @@ const Footer = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://github.com/haithemgouder"
+            href="https://github.com/gouderhaithem"
           >
             <Image
               height={25}
@@ -52,7 +52,7 @@ const Footer = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://www.linkedin.com/in/haithem-gouder%EF%BF%BD-689164244/"
+            href="https://www.linkedin.com/in/gouder-haithem-689164244/"
           >
             <Image
               height={25}
