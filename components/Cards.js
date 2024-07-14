@@ -40,10 +40,10 @@ const Cards = () => {
       icon: "/apple-music-icon.png",
     },
     {
-      title: "Chat room",
-      des: "Chat rooms website built with next js and socket io with firebase/mongoDb database.",
-      link: "https://gouder-chat.vercel.app/?room=sandwich+%F0%9F%8C%AD",
-      icon: "/chat-room.png",
+      title: "Edulinka",
+      des: "in home tutoring platforme created by nest js, react js, mongo db ,firebase ",
+      link: "https://edulinka.vercel.app/",
+      icon: "/edulinkalogo.png",
     },
 
     {
