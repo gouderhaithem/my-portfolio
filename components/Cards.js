@@ -8,6 +8,18 @@ const Cards = () => {
       link: "https://gouderhaithem-blog.vercel.app/",
       icon: "/bloger.png",
     },
+      {
+      title: "Edulinka",
+      des: "in home tutoring platforme created by nest js, react js, mongo db ,firebase ",
+      link: "https://edulinka.vercel.app/",
+      icon: "/edulinkalogo.png",
+    },
+      {
+      title: "Zoshop store",
+      des: "A fully functional multilingual e-commerce website tailored to the Algerian market, complete with an admin panel ",
+      link: "https://zoshop-store.vercel.app/",
+      icon: "/storeLogo.png",
+    },
     {
       title: "my bloghub",
       des: "Blogger website using next js , FireBase for opinions and present the latest news",
@@ -39,19 +51,9 @@ const Cards = () => {
       link: "https://gouderhaithem.github.io/react-music-player/",
       icon: "/apple-music-icon.png",
     },
-    {
-      title: "Edulinka",
-      des: "in home tutoring platforme created by nest js, react js, mongo db ,firebase ",
-      link: "https://edulinka.vercel.app/",
-      icon: "/edulinkalogo.png",
-    },
+  
 
-    {
-      title: "Mini Fb Website",
-      des: "Mini fb like fb using next js , firebase ",
-      link: "https://gouderhicham-fb.vercel.app/",
-      icon: "/social-media.png",
-    },
+  
   ];
   return (
     <section className={`${styles.cards_grid} projects`}>
