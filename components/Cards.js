@@ -3,10 +3,10 @@ import Image from "next/image";
 const Cards = () => {
   const websites = [
     {
-      title: "my blogger",
-      des: "Blogger website using react js , express js and mysql for  express opinions and present the latest news",
-      link: "https://gouderhaithem-blog.vercel.app/",
-      icon: "/bloger.png",
+      title: "collaborative documents platform",
+      des: "Realtime Next.js App with Permissions and Notifications to share and collaborate docs using liveblocks",
+      link: "https://collaborative-docs-platform.vercel.app/",
+      icon: "/book.png",
     },
       {
       title: "Edulinka",
@@ -51,6 +51,12 @@ const Cards = () => {
       link: "https://gouderhaithem.github.io/react-music-player/",
       icon: "/apple-music-icon.png",
     },
+     {
+      title: "my blogger",
+      des: "Blogger website using react js , express js and mysql for  express opinions and present the latest news",
+      link: "https://gouderhaithem-blog.vercel.app/",
+      icon: "/bloger.png",
+    }
   
 
   
